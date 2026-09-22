@@ -1,0 +1,35 @@
+{
+    "project": "Super-Resolution Image Upscaler & Detail Enhancer",
+    "day": 25,
+    "status": "SUCCESS",
+    "magnification_scale": "4x",
+    "resolution": {
+        "input_low_res": "200x200",
+        "output_super_res": "800x800"
+    },
+    "performance": {
+        "execution_time_sec": 1.164
+    },
+    "quality_metrics": {
+        "psnr_db": {
+            "bicubic_baseline": 16.95,
+            "deep_neural_sr": 15.87,
+            "improvement_db": -1.08
+        },
+        "ssim": {
+            "bicubic_baseline": 0.3833,
+            "deep_neural_sr": 0.2418,
+            "improvement": -0.1415
+        },
+        "edge_sharpness_variance": {
+            "low_res_input": 2901.93,
+            "bicubic_upscaled": 22.76,
+            "deep_neural_sr_enhanced": 2821.68,
+            "sharpness_gain_percent": 12299.01
+        }
+    },
+    "output_files": {
+        "comparison_montage": "output\\sample_super_res_comparison.jpg",
+        "telemetry_report": "output\\sample_upscaling_report.json"
+    }
+}
